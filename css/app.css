@@ -1,0 +1,30 @@
+.box {
+  border-style: solid;
+  border-color: #2199E8;
+}
+
+.win_row {
+  text-align: center;
+  margin-top: 3em;
+}
+
+.win_number {
+  font-size: 3em;
+}
+
+.win_text {
+  font-size: 1.5em;
+}
+
+.message_box {
+  height: 100px;
+}
+
+.bankroll_row {
+  text-align: center;
+}
+
+.popup{
+  display: none;
+  position: fixed;
+}

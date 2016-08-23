@@ -1,0 +1,127 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">      
+  <title>JS Betting Game</title>        
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+  
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li class="menu-text">Betting Game</li>      
+      </ul>
+    </div>
+  </div>
+  <!-- Winning Number -->
+  <div class='row win_row'>
+    <div class='small-3 small-centered columns'>
+      <div class= 'row'>
+        <div class="win_text">Winning number is:</div>
+      </div>
+      <div class = 'row'>        
+        <div class='win_number box'>10</div>
+      </div>
+    </div>
+  </div>
+  <!-- Message to Player -->
+  <div class='row message_row'>
+    <div class='small-6 small-centered columns'>
+      <div class='callout message_box box'>
+        <p class='message'>Choose a bet amount and a bet number between 1 and 10. If you guess correctly, you will win your bet amount.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Player input form   -->
+  <div class='row input_row'>
+    <div class='small-6 small-centered columns'>
+      <form class = 'bet_form' id="myform">
+        <div class ="row">
+          <!-- Bet Amount -->
+          <div class="medium-6 columns">
+            <label>Bet Amount
+              <select id="bet_amount">
+                <option value=5>$5</option>
+                <option value=10>$10</option>                
+              </select>
+            </label>
+          </div>
+          <!-- Bet Number -->
+          <div class="medium-6 columns">
+            <label>Bet Number
+              <select id='bet_number'>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+                <option value=9>9</option>
+                <option value=10>10</option>
+              </select>
+            </label>
+          </div>
+          <!-- Submit Button -->
+          <div class="input-group">
+            <div class="input-group-button">
+              <input type="submit" class="button" value="Enter Bet">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- Bankroll Status-->
+  <div class='row bankroll_row'>
+    <div class = 'small-4 small-centered column'>
+      <p>Your Bankroll: $<span id='bankroll'>100</span></p>
+    </div>
+  </div>
+  <!-- Betting records table -->
+  <div class='row records_row'>
+    <div class = 'small-8 small-center columns'></div>
+    <table>
+      <thead></thead>
+        <tr>
+          <td>Round</td>
+          <td>Available Cash</td>
+          <td>Bet Number</td>
+          <td>Bet Amount</td>
+          <td>Winning Number</td>
+          <td>Payoff</td>
+          <td>Final Cash</td>
+        </tr>
+      <tbody>
+        <tr></tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- End of Content -->
+
+  <!-- popup boxes  -->
+  <!-- welcome popup box -->
+  <div>
+    
+  </div>
+  <!-- gameover popup box -->
+  <div>
+    
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src='game.js'></script>
+<!--   <script>
+    $(document).foundation();
+  </script> -->
+</body>
+</html>
